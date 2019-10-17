@@ -47,5 +47,30 @@ class Instructor extends Person {
 
 /*--- Student ---*/
 
+class Student extends Person {
+  constructor (attrs) {
+    this.background  = attrs.background;
+    this.className   = attrs.className;
+    this.favSubjects = attrs.favSubjects;
+  }
+  listSubjects () {
+    console.log ("My favorite subjects are...")
+    this.favSubjects.forEach (
+      (subject) => {
+        console.log (subject);
+      }
+    );
+  }
+  PRAssignment (subject) {
+    console.log (
+      `${this.name} has submitted a PR for ${subject}.`
+    );
+  }
+  sprintChallenge (subject) {
+    console.log (
+      `${this.name} has begun a sprint challenge on ${subject}.`
+    );
+  }
+}
 
 /**************************************/
