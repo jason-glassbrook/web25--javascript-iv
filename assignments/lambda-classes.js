@@ -29,6 +29,7 @@ class Person {
 
 class Instructor extends Person {
   constructor (attrs) {
+    super (attrs);
     this.specialty   = attrs.specialty;
     this.favLanguage = attrs.favLanguage;
     this.catchPhrase = attrs.catchPhrase;
@@ -49,6 +50,7 @@ class Instructor extends Person {
 
 class Student extends Person {
   constructor (attrs) {
+    super (attrs);
     this.background  = attrs.background;
     this.className   = attrs.className;
     this.favSubjects = attrs.favSubjects;
