@@ -47,16 +47,18 @@ class GameObject
   * should inherit destroy() from GameObject's prototype
 */
 
-const CharacterStats = function (attrs) {
-  GameObject.call (this , attrs);
-  this.healthPoints = attrs.healthPoints;
-};
-
-CharacterStats.prototype = Object.create (GameObject.prototype)
-
-CharacterStats.prototype.takeDamage = function () {
-  return `${this.name} took damage.`;
-};
+class CharacterStats
+{
+  constructor (attrs)
+  {
+    super (attrs);
+    this.healthPoints = attrs.healthPoints;
+  }
+  takeDamage ()
+  {
+    return `${this.name} took damage.`;
+  }
+}
 
 /*
   === Humanoid (Having an appearance or character resembling that of a human.) ===
