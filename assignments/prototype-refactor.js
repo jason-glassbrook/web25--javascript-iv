@@ -8,15 +8,15 @@ Prototype Refactor
 
 */
 
-///#####################################
-/// TOOLS
-///#####################################
+/***************************************
+  TOOLS
+***************************************/
 
 function heading (content) {
   console.log (`\n### ${content} ###\n`);
 }
 
-///#####################################
+/**************************************/
 
 /*
   === GameObject ===
@@ -166,9 +166,9 @@ console.log (archer.greet ()); // Lilith offers a greeting in Elvish.
 console.log (mage.takeDamage ()); // Bruce took damage.
 console.log (swordsman.destroy ()); // Sir Mustachio was removed from the game.
 
-///#####################################
-/// STRETCH
-///#####################################
+/***************************************
+  STRETCH
+***************************************/
 
 // * Create Villain and Hero constructor functions that inherit from the Humanoid constructor function.
 // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
