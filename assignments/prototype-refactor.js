@@ -47,7 +47,7 @@ class GameObject
   * should inherit destroy() from GameObject's prototype
 */
 
-class CharacterStats
+class CharacterStats extends GameObject
 {
   constructor (attrs)
   {
@@ -70,7 +70,7 @@ class CharacterStats
   * should inherit takeDamage() from CharacterStats
 */
 
-class Humanoid
+class Humanoid extends CharacterStats
 {
   constructor (attrs)
   {
