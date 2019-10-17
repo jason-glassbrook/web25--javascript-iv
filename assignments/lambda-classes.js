@@ -1,1 +1,9 @@
-// CODE here for your Lambda Classes
+/***************************************
+  TOOLS
+***************************************/
+
+function heading (content) {
+  console.log (`\n### ${content} ###\n`);
+}
+
+/**************************************/
