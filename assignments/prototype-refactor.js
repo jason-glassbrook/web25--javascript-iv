@@ -70,18 +70,20 @@ class CharacterStats
   * should inherit takeDamage() from CharacterStats
 */
 
-const Humanoid = function (attrs) {
-  CharacterStats.call (this , attrs);
-  this.team     = attrs.team;
-  this.weapons  = attrs.weapons;
-  this.language = attrs.language;
-};
-
-Humanoid.prototype = Object.create (CharacterStats.prototype);
-
-Humanoid.prototype.greet = function () {
-  return (`${this.name} offers a greeting in ${this.language}.`);
-};
+class Humanoid
+{
+  constructor (attrs)
+  {
+    super (attrs);
+    this.team     = attrs.team;
+    this.weapons  = attrs.weapons;
+    this.language = attrs.language;
+  }
+  greet ()
+  {
+    return (`${this.name} offers a greeting in ${this.language}.`);
+  }
+}
 
 /*
   * Inheritance chain: GameObject -> CharacterStats -> Humanoid
