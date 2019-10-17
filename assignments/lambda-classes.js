@@ -71,7 +71,27 @@ class Instructor extends Person {
   grade (student , subject) {
     console.log (
       `${student.name} receives a perfect score on ${subject}!`
-    )
+    );
+  }
+}
+
+/*--- Project Manager ---*/
+
+class ProjectManager extends Instructor {
+  constructor (attrs) {
+    super (attrs);
+    this.gradClassName = attrs.gradClassName;
+    this.favInstructor = attrs.favInstructor;
+  }
+  standUp (channel) {
+    console.log (
+      `${this.name} announces to ${channel}: @channel Time for standup!`
+    );
+  }
+  debugCode (student , subject) {
+    console.log (
+      `${this.name} debugs ${student.name}'s code on ${subject}.`
+    );
   }
 }
 
