@@ -90,9 +90,134 @@ class ProjectManager extends Instructor {
   }
   debugCode (student , subject) {
     console.log (
-      `${this.name} debugs ${student.name}'s code on ${subject}.`
+      `${this.name} debugs ${student.name}"s code on ${subject}.`
     );
   }
 }
 
-/**************************************/
+/***************************************
+  TESTING
+***************************************/
+
+const myPersons         = [];
+const myStudents        = [];
+const myInstructors     = [];
+const myProjectManagers = [];
+
+/*--- persons ---*/
+
+myPersons[1] = new Person({
+  name     : "Vivien",
+  age      : 35,
+  location : "South Donstad"
+});
+myPersons[2] = new Person({
+  name     : "Stanley",
+  age      : 68,
+  location : "Kenyonmouth"
+});
+myPersons[3] = new Person({
+  name     : "Stanley",
+  age      : 71,
+  location : "Wisokyfort"
+});
+
+/*--- students ---*/
+
+myStudents[1] = new Student({
+  name     : "Carter",
+  age      : 23,
+  location : "North Hallieland",
+  background : "food truck server",
+  className : "WEB73",
+  favSubjects : [
+    "HTML",
+    "CSS",
+    "Java"
+  ],
+});
+myStudents[2] = new Student({
+  name     : "Winnifred",
+  age      : 39,
+  location : "Kuphalfurt",
+  background : "nurse",
+  className : "UX47",
+  favSubjects : [
+    "JavaScript",
+    "LESS",
+    "React"
+  ],
+});
+myStudents[3] = new Student({
+  name     : "Torrey",
+  age      : 36,
+  location : "Port Audrey",
+  background : "truck driver",
+  className : "DS52",
+  favSubjects : [
+    "React",
+    "CSS",
+    "Python"
+  ],
+});
+
+/*--- instructors ---*/
+
+myInstructors[1] = new Instructor({
+  name     : "Kaylin",
+  age      : 88,
+  location : "Port Patrick",
+  specialty   : "User Experience",
+  favLanguage : "LESS",
+  catchPhrase : "junk in, junk out!"
+
+});
+myInstructors[2] = new Instructor({
+  name     : "Alfonso",
+  age      : 20,
+  location : "Hettingerburgh",
+  specialty   : "Backend Web Dev",
+  favLanguage : "Python",
+  catchPhrase : "antidisestablishmentarianism!"
+});
+myInstructors[3] = new Instructor({
+  name     : "Brannon",
+  age      : 23,
+  location : "West Kurtburgh",
+  specialty   : "Frontend Web Dev",
+  favLanguage : "TypeScript",
+  catchPhrase : "gad zooks!"
+});
+
+/*--- project managers ---*/
+
+myProjectManagers[1] = new ProjectManager({
+  name     : "Manuel",
+  age      : 71,
+  location : "Murphymouth",
+  specialty   : "Data Science",
+  favLanguage : "R",
+  catchPhrase : "jinky!",
+  gradClassName : "DS2",
+  favInstructor : myInstructors[1]
+});
+myProjectManagers[2] = new ProjectManager({
+  name     : "Madisyn",
+  age      : 51,
+  location : "New Lionelland",
+  specialty   : "Full Stack Web Dev",
+  favLanguage : "Python",
+  catchPhrase : "yahoo!",
+  gradClassName : "WEB13",
+  favInstructor : myInstructors[2]
+});
+myProjectManagers[3] = new ProjectManager({
+  name     : "Lorenza",
+  age      : 33,
+  location : "Douglasshire",
+  specialty   : "Frontend Web Dev",
+  favLanguage : "JavaScript",
+  catchPhrase : "kowabunga!",
+  gradClassName : "WEB15",
+  favInstructor : myInstructors[3]
+});
