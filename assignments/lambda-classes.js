@@ -110,17 +110,17 @@ const myProjectManagers = [];
 
 /*--- persons ---*/
 
-myPersons[1] = new Person({
+myPersons[0] = new Person({
   name     : "Vivien",
   age      : 35,
   location : "South Donstad"
 });
-myPersons[2] = new Person({
+myPersons[1] = new Person({
   name     : "Stanley",
   age      : 68,
   location : "Kenyonmouth"
 });
-myPersons[3] = new Person({
+myPersons[2] = new Person({
   name     : "Stanley",
   age      : 71,
   location : "Wisokyfort"
@@ -128,7 +128,7 @@ myPersons[3] = new Person({
 
 /*--- students ---*/
 
-myStudents[1] = new Student({
+myStudents[0] = new Student({
   name     : "Carter",
   age      : 23,
   location : "North Hallieland",
@@ -140,7 +140,7 @@ myStudents[1] = new Student({
     "Java"
   ],
 });
-myStudents[2] = new Student({
+myStudents[1] = new Student({
   name     : "Winnifred",
   age      : 39,
   location : "Kuphalfurt",
@@ -152,7 +152,7 @@ myStudents[2] = new Student({
     "React"
   ],
 });
-myStudents[3] = new Student({
+myStudents[2] = new Student({
   name     : "Torrey",
   age      : 36,
   location : "Port Audrey",
@@ -167,7 +167,7 @@ myStudents[3] = new Student({
 
 /*--- instructors ---*/
 
-myInstructors[1] = new Instructor({
+myInstructors[0] = new Instructor({
   name     : "Kaylin",
   age      : 88,
   location : "Port Patrick",
@@ -176,7 +176,7 @@ myInstructors[1] = new Instructor({
   catchPhrase : "junk in, junk out!"
 
 });
-myInstructors[2] = new Instructor({
+myInstructors[1] = new Instructor({
   name     : "Alfonso",
   age      : 20,
   location : "Hettingerburgh",
@@ -184,7 +184,7 @@ myInstructors[2] = new Instructor({
   favLanguage : "Python",
   catchPhrase : "antidisestablishmentarianism!"
 });
-myInstructors[3] = new Instructor({
+myInstructors[2] = new Instructor({
   name     : "Brannon",
   age      : 23,
   location : "West Kurtburgh",
@@ -195,7 +195,7 @@ myInstructors[3] = new Instructor({
 
 /*--- project managers ---*/
 
-myProjectManagers[1] = new ProjectManager({
+myProjectManagers[0] = new ProjectManager({
   name     : "Manuel",
   age      : 71,
   location : "Murphymouth",
@@ -203,9 +203,9 @@ myProjectManagers[1] = new ProjectManager({
   favLanguage : "R",
   catchPhrase : "jinky!",
   gradClassName : "DS2",
-  favInstructor : myInstructors[1]
+  favInstructor : myInstructors[0]
 });
-myProjectManagers[2] = new ProjectManager({
+myProjectManagers[1] = new ProjectManager({
   name     : "Madisyn",
   age      : 51,
   location : "New Lionelland",
@@ -213,9 +213,9 @@ myProjectManagers[2] = new ProjectManager({
   favLanguage : "Python",
   catchPhrase : "yahoo!",
   gradClassName : "WEB13",
-  favInstructor : myInstructors[2]
+  favInstructor : myInstructors[1]
 });
-myProjectManagers[3] = new ProjectManager({
+myProjectManagers[2] = new ProjectManager({
   name     : "Lorenza",
   age      : 33,
   location : "Douglasshire",
@@ -223,7 +223,7 @@ myProjectManagers[3] = new ProjectManager({
   favLanguage : "JavaScript",
   catchPhrase : "kowabunga!",
   gradClassName : "WEB15",
-  favInstructor : myInstructors[3]
+  favInstructor : myInstructors[2]
 });
 
 /*******************
