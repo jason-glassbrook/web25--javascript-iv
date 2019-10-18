@@ -99,6 +99,10 @@ class ProjectManager extends Instructor {
   TESTING
 ***************************************/
 
+/*******************
+  define objects
+*******************/
+
 const myPersons         = [];
 const myStudents        = [];
 const myInstructors     = [];
@@ -221,3 +225,19 @@ myProjectManagers[3] = new ProjectManager({
   gradClassName : "WEB15",
   favInstructor : myInstructors[3]
 });
+
+/*******************
+  logging
+*******************/
+
+heading ("PERSONS");
+console.log (myPersons);
+
+heading ("STUDENTS");
+console.log (myStudents);
+
+heading ("INSTRUCTORS");
+console.log (myInstructors);
+
+heading ("PROJECT MANAGERS");
+console.log (myProjectManagers);
